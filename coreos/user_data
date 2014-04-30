@@ -1,0 +1,26 @@
+#cloud-config
+
+#ssh_authorized_keys:
+# - 
+
+coreos:
+   units:
+    - name: etcd.service
+      command: start
+    - name: fleet.service
+      command: start
+
+#users:
+#   core:
+#    - coreos-ssh-import-github: webwurst
+#    - coreos-ssh-import-github: djmaze
+
+# A cloud-config file should contain an associative array which has zero or more of the following keys.
+# See https://github.com/coreos/coreos-cloudinit/blob/master/Documentation/cloud-config.md
+#
+# coreos
+# ssh_authorized_keys
+# hostname
+# users
+# write_files
+# manage_etc_hosts

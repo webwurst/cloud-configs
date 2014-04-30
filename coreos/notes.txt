@@ -1,0 +1,5 @@
+
+$ curl -O http://storage.core-os.net/coreos/amd64-usr/alpha/coreos_production_qemu_image.img.bz2
+
+$ ./create-coreos "coreos1"
+$ virsh start coreos
